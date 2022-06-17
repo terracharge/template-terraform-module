@@ -6,5 +6,5 @@ variable "context" {
     product      = string
     tags         = map(string)
   })
-  description = "Default context variables"
+  description = "Default context for naming purpose etc."
 }
