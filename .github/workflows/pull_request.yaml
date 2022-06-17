@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Apply Size Label
-        uses: bflad/pr-size-labeler
+        uses: codelytv/pr-size-labeler@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           xs_label: "size/XS"
@@ -40,7 +40,11 @@ jobs:
           l_label: "size/L"
           l_max_size: "300"
           xl_label: "size/XL"
-          message_if_xl: ""
+          fail_if_xl: "false"
+          message_if_xl: >
+            This PR exceeds the recommended size of 1000 lines.
+            Please make sure you are NOT addressing multiple issues with one PR.
+            Note this PR might be rejected due to its size.
   PullRequestComments:
     runs-on: ubuntu-latest
     steps:

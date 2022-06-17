@@ -9,3 +9,5 @@ github-actions:
   - ".github/workflows/*.yml"
 terraform:
   - "**/*.tf"
+ci/cd:
+  - .github/workflows/*
