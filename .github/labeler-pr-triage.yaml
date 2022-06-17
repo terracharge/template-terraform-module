@@ -1,0 +1,11 @@
+documentation:
+  - "**/*.md"
+  - "docs/**/*"
+  - "website/**/*"
+examples:
+  - "examples/**/*"
+github-actions:
+  - ".github/*.yml"
+  - ".github/workflows/*.yml"
+terraform:
+  - "**/*.tf"
